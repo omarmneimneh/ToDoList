@@ -1,26 +1,30 @@
 import Projects from "./Projects"
 
 export default class Todo{
-    constructor(list){
-        this.list = []
+    constructor(){
+        this.list=[]
     }
 
-    setList(list){
+    static setList(list){
         this.list= list
     }
 
-    getList(){
+    static getList(){
         return this.list
     }
 
-    addToList(project){
-        return this.list=this.list.push(project)
+    static addToList(project){
+        console.log(project)
+        this.list = this.list.push(project.name)
     }
 
-    removeFromList(project){
+    static removeFromList(project){
         return this.list = this.list.filter(item =>{
             item !== project;
         })
     }
 
+    static log(){
+        console.log('Im in todo.js')
+    }
 }

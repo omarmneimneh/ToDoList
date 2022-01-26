@@ -112,3 +112,37 @@ body{
     height: 100%;
     padding: 45px;
 }
+
+.projectInputBox{
+    width: 100%;
+    height: 100%
+}
+
+.projectInputBox > input{
+    width: 96%;
+    height: 25%;
+}
+
+.btndiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btndiv > button{
+    margin-top: .5rem;
+    width: 45%;
+    margin: .5rem .2rem;
+    cursor: pointer;
+    border-style: none;
+}
+
+#yesbtn{
+    background-color: green;
+    color: white;
+}
+
+#nobtn{
+    background-color: red;
+    color: white;
+}
