@@ -146,3 +146,40 @@ body{
     background-color: red;
     color: white;
 }
+
+.projectTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    gap: 10%;
+}
+
+.projectTitle>button{
+    position: relative;
+    right: -50%;
+    width: fit-content;
+    display: flex;
+    font-size: 18px;
+}
+
+.modal{
+    display: none;
+}
+
+.modal.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    opacity: 90%;
+    color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

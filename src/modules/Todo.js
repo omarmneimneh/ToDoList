@@ -1,30 +1,30 @@
-import Projects from "./Projects"
+import Project from "./Poject";
+import Task from "./Task";
 
 export default class Todo{
     constructor(){
-        this.list=[]
+        this.list = []
     }
 
-    static setList(list){
-        this.list= list
+    //Todo
+    // 1. add projects to list
+    // 2. return all projects from list
+    // 3. delete projects from list
+    // 4. find specific project
+    addProject(project){
+        if(!this.list.find(item=>item.name===project.name)) this.list.push(project)
+        else console.log('this project exists')
     }
 
-    static getList(){
-        return this.list
+    getProjects(){
+        return this.list;
     }
 
-    static addToList(project){
-        console.log(project)
-        this.list = this.list.push(project.name)
+    deleteProject(project){
+        return this.list = this.list.filter(item=>item.name!== project.name)
     }
 
-    static removeFromList(project){
-        return this.list = this.list.filter(item =>{
-            item !== project;
-        })
-    }
-
-    static log(){
-        console.log('Im in todo.js')
+    findProject(project){
+        return this.list.find(obj => obj.name === project)
     }
 }

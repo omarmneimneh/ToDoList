@@ -24,10 +24,6 @@
                 <div class="title">
                     <h3>Projects</h3>
                 </div>
-                <button id="projectButton">Project 1</button>
-                <button id="projectButton">Project 2</button>
-                <button id="projectButton">Project 3</button>
-                <button id="projectButton">Project 4</button>
             </div>
             <div class="addProject">
                 <button class="addProjectbtn">
@@ -38,7 +34,9 @@
         </div>
 
         <div class="projectsContainer">
-            <h1>name of project</h1>
+            <div class="projectTitle">
+                <h1>name of project</h1>
+            </div>
             <div class="tasks">
                 <div class="task">
                     <h3>name</h3>
@@ -52,6 +50,16 @@
 
     </div>
     
-
+    <div class="modal">
+        <input id="name" type="text" placeholder="Task Name:">
+        <input id="desc" type="text" placeholder="Descreption">
+        <input id="date" type="date">
+        <select name="priority" id="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+        <button id="submit">Submit</button>
+    </div>
 </body>
 </html>
